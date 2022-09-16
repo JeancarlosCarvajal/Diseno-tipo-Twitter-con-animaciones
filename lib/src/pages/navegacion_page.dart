@@ -19,6 +19,7 @@ class NavegacionPage extends StatelessWidget {
       child: Scaffold(
 
         appBar: AppBar(
+          centerTitle: true,
           backgroundColor: Colors.pink,
           title: const Text('Notifications Page'),
         ),
@@ -51,8 +52,8 @@ class BottomNavigation extends StatelessWidget {
       items: [
 
         const BottomNavigationBarItem(
-          label: 'Bones',
-          icon: FaIcon( FontAwesomeIcons.bone )
+          label: 'Fish',
+          icon: FaIcon( FontAwesomeIcons.fish )
         ),
 
         
@@ -92,8 +93,8 @@ class BottomNavigation extends StatelessWidget {
         ),
 
         const BottomNavigationBarItem(
-          label: 'My Dog',
-          icon: FaIcon( FontAwesomeIcons.dog )
+          label: 'My Octopus',
+          icon: FaIcon( FontAwesomeIcons.octopusDeploy )
         ),
 
 

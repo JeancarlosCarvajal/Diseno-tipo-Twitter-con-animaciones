@@ -17,10 +17,11 @@ class Pagina1Page extends StatelessWidget {
     return Scaffold(
       
       appBar: AppBar(
+        centerTitle: true,
 
         title: FadeIn(
           duration: Duration( milliseconds: 500 ),
-          child: Text('Animate_do')
+          child: Text('Animations')
         ),
 
         actions: <Widget>[
@@ -28,7 +29,7 @@ class Pagina1Page extends StatelessWidget {
           IconButton(
             icon: FaIcon( FontAwesomeIcons.twitter ),
             onPressed: (){
-              Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context) => TwitterPage() )  );
+              Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context) => const TwitterPage() )  );
             },
           ),
 
@@ -37,7 +38,7 @@ class Pagina1Page extends StatelessWidget {
             child: IconButton(
               icon: Icon( Icons.navigate_next ),
               onPressed: (){
-                Navigator.push(context,  CupertinoPageRoute(builder: (BuildContext context) => Pagina1Page() )  );
+                Navigator.push(context,  CupertinoPageRoute(builder: (BuildContext context) => const Pagina1Page() )  );
               },
             ),
           ),
@@ -50,7 +51,7 @@ class Pagina1Page extends StatelessWidget {
         child: FloatingActionButton(
           child: FaIcon( FontAwesomeIcons.play ),
           onPressed: (){
-            // Navigator.push(context,  MaterialPageRoute(builder: (BuildContext context)=> NavegacionPage() )  );
+            Navigator.push( context,  MaterialPageRoute( builder: (BuildContext context) => const NavegacionPage() ) );
           }
         ),
       ),
@@ -68,13 +69,13 @@ class Pagina1Page extends StatelessWidget {
 
             FadeInDown(
               delay: Duration( milliseconds: 200 ),
-              child: Text('Titulo', style: TextStyle( fontSize: 40, fontWeight: FontWeight.w200 ) )
+              child: Text('Hello', style: TextStyle( fontSize: 40, fontWeight: FontWeight.w200 ) )
             ),
 
 
             FadeInDown(
               delay: Duration( milliseconds: 800 ),
-              child: Text('Soy un texto pequeño', style: TextStyle( fontSize: 20, fontWeight: FontWeight.w400 ) )
+              child: Text('I am a little title', style: TextStyle( fontSize: 20, fontWeight: FontWeight.w400 ) )
             ),
 
             FadeInLeft(

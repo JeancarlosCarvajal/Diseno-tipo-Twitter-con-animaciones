@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Animate_do',
-      // home: Pagina1Page() 
+      home: Pagina1Page() 
       // home: TwitterPage()  
-      home: NavegacionPage()   
+      // home: NavegacionPage()   
     );
   }
 }

@@ -2,7 +2,7 @@
 
 Diseno de animaciones tipo twitter usando el paquete animate_do
 
-## Aplication Appearance
+## Application Appearance
  
 ![Appearance 1](appearance/1.png) 
 ![Appearance 2](appearance/2.png) 
